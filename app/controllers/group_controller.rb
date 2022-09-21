@@ -5,7 +5,6 @@ class GroupController < ApplicationController # rubocop:todo Style/Documentation
 
   def index
     @groups = current_user.groups
-    @user = current_user
   end
 
   def new
