@@ -1,0 +1,10 @@
+<h3>Groups</h3>
+<% if @groups.count > 0 %>
+<% @ groups.each do |group| %>
+<%= link_to class: "card" do %>
+<div class="card-body"> This is a card </div>
+<% end %>
+<% else %>
+<p>There are no groups yet.</p>
+<% end %>
+<%= link_to "New Group", new_group_path, class: "btn btn-primary" %>
