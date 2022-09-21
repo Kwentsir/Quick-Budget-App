@@ -5,7 +5,10 @@ require 'rails_helper'
 RSpec.describe Group, type: :model do
   subject do
     user = User.create(name: 'test', email: 'example@email.com', password: '123456')
-    Group.new(name: 'test', icon: 'https://dashboard.microverse.org/assets/icon-white-6545162e585bbcd21acdfc30fbb9763ac2a42226c6a436f234a7bc370d4bf50f.png', author: user)
+    Group.new(name: 'test',
+              # rubocop:todo Layout/LineLength
+              icon: 'https://dashboard.microverse.org/assets/icon-white-6545162e585bbcd21acdfc30fbb9763ac2a42226c6a436f234a7bc370d4bf50f.png', author: user)
+    # rubocop:enable Layout/LineLength
   end
 
   before { subject.save }
