@@ -1,24 +1,53 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Quick Budget App
 
-Things you may want to cover:
+ A mobile web application to manage your budget.
 
-* Ruby version
+## Demo
 
-* System dependencies
+Check out the live app [here]()
 
-* Configuration
+## Built With
 
-* Database creation
+- Ruby on Rails
+- PostgresSQL
 
-* Database initialization
+## Getting Started
 
-* How to run the test suite
+To get a local copy up and running follow these simple example steps.
 
-* Services (job queues, cache servers, search engines, etc.)
+- Copy this link `https://github.com/Kwentsir/Quick-Budget-App.git`.
+- Get the directory that you want to clone the repository.
+- Open the command prompt in this directory.
+- Write `git clone https://github.com/Kwentsir/Quick-Budget-App.git`.
+- Go to the repository folder in your command prompt `cd Quick-Budget-App`.
+- run `bundle install` to install dependencies
+- run `rails c` to start the local app.
+- run `rspec` to run the tests.
 
-* Deployment instructions
+## Authors
 
-* ...
+👤 **Joseph Kwesi Kwentsir**
+
+- GitHub: [@Kwentsir](https://github.com/Kwentsir/)
+- Twitter: [@jkwentsir](https://twitter.com/jkwentsir)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/josephkwentsir/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- This web application UI design was inspired by [Gregoire Vella on Behance.](https://www.behance.net/gregoirevella)
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
