@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class EntitiesController < ApplicationController # rubocop:todo Style/Documentation
+  before_action :authenticate_user!
   def index
     @group = current_user.groups.find(params[:group_id])
     @entities = @group.entities

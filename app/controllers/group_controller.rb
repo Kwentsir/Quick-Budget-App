@@ -1,10 +1,14 @@
 # frozen_string_literal: true
 
 class GroupController < ApplicationController # rubocop:todo Style/Documentation
-  load_and_authorize_resource
+  before_action :authenticate_user!, except: :index
 
   def index
-    @groups = current_user.groups
+    if user_signed_in?
+      @groups = current_user.groups
+    else
+      redirect_to new_user_session_path
+    end
   end
 
   def new; end

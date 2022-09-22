@@ -5,13 +5,20 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
-                <a class="nav-link" href="/groups">Groups</a>
-                <a class="nav-link" href="/entities">Transactions</a>
-                <a class="nav-link" href="/users/sign_in">Sign In</a>
-                <a class="nav-link" href="/users/sign_up">Sign Up</a>
-            </div>
-    </div>
+           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <% if user_signed_in? %>
+          <li class="nav-item">
+            <%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete }, class: 'btn btn-outline-warning' %>
+          </li>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to 'Sign Up', new_user_session_path, class: 'nav-link' %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Sign In', new_user_session_path, class: 'nav-link' %>
+          </li>
+        <% end %>
+        </ul>	
+        </div>
     </div>
 </nav>
