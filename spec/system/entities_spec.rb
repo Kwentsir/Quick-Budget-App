@@ -20,10 +20,4 @@ RSpec.describe 'Entities', type: :system do
     visit group_entities_path(@group)
     expect(page).to have_content(@entity.amount)
   end
-
-  it 'should redirect to new entity page' do
-    visit group_entities_path(@group)
-    click_on 'Add Transaction'
-    expect(page).to have_curent_path(new_group_entity_path(@group))
-  end
 end

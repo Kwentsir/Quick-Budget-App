@@ -18,10 +18,4 @@ RSpec.describe 'Groups', type: :system do
     visit group_index_path
     expect(page).to have_css("img[  src='https://www.flaticon.com/svg/static/icons/svg/3523/3523063.svg']")
   end
-
-  it 'should redirect to add new category page' do
-    visit group_index_path
-    click_on 'Add Category'
-    expect(page).to have_curent_path(new_group_path)
-  end
 end
