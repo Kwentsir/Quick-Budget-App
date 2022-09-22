@@ -1,4 +1,2 @@
-# frozen_string_literal: true
-
-module GroupHelper # rubocop:todo Style/Documentation
+module GroupHelper
 end

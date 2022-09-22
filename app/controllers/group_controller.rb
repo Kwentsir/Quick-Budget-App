@@ -1,6 +1,4 @@
-# frozen_string_literal: true
-
-class GroupController < ApplicationController # rubocop:todo Style/Documentation
+class GroupController < ApplicationController
   before_action :authenticate_user!, except: :index
 
   def index
@@ -11,16 +9,18 @@ class GroupController < ApplicationController # rubocop:todo Style/Documentation
     end
   end
 
-  def new; end
+  def new
+    @group = current_user.groups.new
+  end
 
   def create
     @user = current_user
     @group = @user.groups.create(group_params)
     if @group.save
-      flash[:notice] = 'Group created successfully'
+      flash[:notice] = 'New category created successfully'
       redirect_to group_index_path
     else
-      flash.now[:alert] = 'Group creation failed'
+      flash.now[:alert] = 'Category creation failed'
       render action: 'new'
     end
   end
