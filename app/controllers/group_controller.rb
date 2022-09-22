@@ -7,10 +7,7 @@ class GroupController < ApplicationController # rubocop:todo Style/Documentation
     @groups = current_user.groups
   end
 
-  def new
-    @user = current_user
-    @group = @user.groups.new
-  end
+  def new; end
 
   def create
     @user = current_user

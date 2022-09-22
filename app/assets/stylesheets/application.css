@@ -57,3 +57,30 @@ body {
   height: 80px;
   object-fit: fill;
 }
+
+.navbar {
+  background-color: #3778c2 !important;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.min_nav {
+  display: flex;
+  align-items: center;
+  color: black;
+  width: 100%;
+}
+
+.min_nav:hover {
+  color: #3778c2;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  bottom: 5px;
+  text-align: left;
+  margin-right: 100px;
+}
