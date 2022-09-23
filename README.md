@@ -1,24 +1,56 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Quick Budget App
 
-Things you may want to cover:
+ A mobile web application to manage your budget.
 
-* Ruby version
+## Demo
 
-* System dependencies
+Check out the live app [here](https://quick-budget-app.herokuapp.com/users/sign_in)
 
-* Configuration
+Check out the video presentation of the app functionality [here](https://www.loom.com/share/d60814794a184bfc99cf161816b735eb)
 
-* Database creation
+## Built With
 
-* Database initialization
+- Ruby on Rails
+- PostgresSQL
 
-* How to run the test suite
+## Getting Started
 
-* Services (job queues, cache servers, search engines, etc.)
+To get a local copy up and running follow these simple example steps.
 
-* Deployment instructions
+- Copy this link `https://github.com/Kwentsir/Quick-Budget-App.git`.
+- Get the directory that you want to clone the repository.
+- Open the command prompt in this directory.
+- Write `git clone https://github.com/Kwentsir/Quick-Budget-App.git`.
+- Go to the repository folder in your command prompt `cd Quick-Budget-App`.
+- run `bundle install` to install dependencies
+- run `rails db:setup db:create db:migrate` to set up your database environment.
+- run `rails s` to start the local app.
+- run `rspec` to run the tests.
 
-* ...
+## Authors
+
+👤 **Joseph Kwesi Kwentsir**
+
+- GitHub: [@Kwentsir](https://github.com/Kwentsir/)
+- Twitter: [@jkwentsir](https://twitter.com/jkwentsir)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/josephkwentsir/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- This web application UI design was inspired by [Gregoire Vella on Behance.](https://www.behance.net/gregoirevella)
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
