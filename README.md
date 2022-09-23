@@ -6,7 +6,9 @@
 
 ## Demo
 
-Check out the live app [here]()
+Check out the live app [here](https://quick-budget-app.herokuapp.com/users/sign_in)
+
+Check out the video presentation of the app functionality [here](https://www.loom.com/share/15f352ad235946c9933f1d8b5ba81370)
 
 ## Built With
 
