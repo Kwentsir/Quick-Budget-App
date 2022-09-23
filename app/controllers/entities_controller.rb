@@ -20,11 +20,11 @@ class EntitiesController < ApplicationController
         flash[:notice] = 'New transaction created successfully'
         redirect_to group_entities_path(@group)
       else
-        flash.now[:alert] = 'Transaction category creation failed'
+        flash.now[:alert] = 'Transaction category creation failed. Please try again.'
         render action: 'new'
       end
     else
-      flash.now[:alert] = 'Transaction creation failed'
+      flash.now[:alert] = 'Transaction creation failed. Please try again.'
       render action: 'new'
     end
   end

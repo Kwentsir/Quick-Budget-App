@@ -8,6 +8,7 @@
 <p class="fw-semibold">
 <%= group.name %>
 </p>
+<p class="fw-light"><%= l group.created_at, format: :long %></p>
 </div>
 <p class="fw-bolder"> $<%= group.entities.sum(&:amount) %> </p>
 </div>

@@ -25,7 +25,8 @@ To get a local copy up and running follow these simple example steps.
 - Write `git clone https://github.com/Kwentsir/Quick-Budget-App.git`.
 - Go to the repository folder in your command prompt `cd Quick-Budget-App`.
 - run `bundle install` to install dependencies
-- run `rails c` to start the local app.
+- run `rails db:setup db:create db:migrate` to set up your database environment.
+- run `rails s` to start the local app.
 - run `rspec` to run the tests.
 
 ## Authors
